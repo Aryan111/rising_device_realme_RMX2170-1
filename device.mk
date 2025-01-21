@@ -21,6 +21,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 $(call inherit-product-if-exists, vendor/hotword/google.mk)
 $(call inherit-product-if-exists, packages/apps/RealmeDirac/dirac.mk)
 
+TARGET_DISABLE_EPPE := true
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
